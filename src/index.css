@@ -1,13 +1,97 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+:root {
+  --Black: #000;
+  --Gray-D: #7d7d7d;
+  --Gray-M: #e5e5e5;
+  --Gray-L: #f3f3f3;
+  --White: #fff;
+}
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Libre Baskerville", serif;
+}
+/* Utilities */
+.container {
+  /* background-color: lightslategray; */
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+img {
+  display: block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Typography */
+.display {
+  font-weight: bold;
+  font-size: 20rem;
+  line-height: 15rem;
+  color: var(--Gray-L);
+}
+.h1 {
+  font-weight: bold;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  color: var(--Black);
+}
+.h2 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: normal;
+  color: var(--Black);
+}
+.h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--Black);
+}
+.subhead--1 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: var(--Black);
+}
+.subhead--2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: normal;
+  color: var(--Black);
+}
+.link--1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: normal;
+  letter-spacing: 2.57px;
+  text-transform: uppercase;
+  color: var(--Gray-D);
+}
+
+.link--2 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: var(--Gray-D);
+}
+.body-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--Gray-D);
 }
